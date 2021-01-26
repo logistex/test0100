@@ -3,19 +3,78 @@
 <head>
   <title>WEB - html</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    #container {
+        width: 940px;
+        margin: 0px auto;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+    }
+    #header {
+        background-color: steelblue;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #bcbcbc;
+        text-align: center;
+    }
+    #content {
+        background-color: #EBF5FB;
+        order: 2;
+        width: 580px;
+        padding: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        float: right;
+        border: 1px solid #bcbcbc;
+    }
+    #row {
+        display: flex;
+    }
+    #sidebar {
+        color: white;
+        background-color: #A9CCE3;
+        order: 1;
+        width: 260px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: left;
+        border: 1px solid #bcbcbc;
+    }
+    #footer {
+        color: #AEB6BF;
+        background-color: steelblue;
+        clear: both;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+    }
+    </style>
 </head>
 <body>
-  <h1>
-    <a href="index.html">WEB</a>
-  </h1>
-  <ol>
-    <li><a href="1_html.html">HTML</a></li>
-    <li><a href="2_css.html">CSS</a></li>
-    <li><a href="3_javascript.html">JavaScript</a></li>
-  </ol>
-  <h2>WEB</h2>
-  <p>
-    The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991. elements are delineated by tags, written using angle brackets. 
-  </p>
+    <div id="container">
+        <div id="header">
+            <h1>
+                <a href="index.html">WEB</a>
+            </h1>
+        </div>
+        <div id="row">
+            <div id="sidebar">
+                <ol>
+                <li><a href="1_html.html">HTML</a></li>
+                <li><a href="2_css.html">CSS</a></li>
+                <li><a href="3_javascript.html">JavaScript</a></li>
+                </ol>
+            </div>
+            <div id="content">
+                <h2>WEB</h2>
+                <p>
+                The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991. elements are delineated by tags, written using angle brackets.
+                </p>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Managed by <a href="mailto:logistex@hywoman.ac.kr">logistex</a></p>
+        </div>
+    </div>
 </body>
 </html>
